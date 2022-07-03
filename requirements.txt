@@ -11,3 +11,4 @@ heroku3
 datetime
 pynewtonmath
 pytz
+aiohttp
