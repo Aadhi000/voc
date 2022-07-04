@@ -13,7 +13,7 @@ from pyrogram.types import InlineKeyboardButton
 from database.users_chats_db import db
 from bs4 import BeautifulSoup
 import requests
-
+import aiohttp
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
@@ -389,7 +389,7 @@ async def get_shortlink(link):
               'url': link,
               }
 
-    async with ClientSession() as session:
+    async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True, ssl=False) as response:
             data = await response.json()
             if data["status"] == "success":
