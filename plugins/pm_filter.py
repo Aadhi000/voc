@@ -637,7 +637,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="sᴇʟᴇᴄᴛ ғɪʟᴇ ғʀᴏᴍ ᴀʙᴏᴠᴇ ʟɪɴᴋs", callback_data="pages")]
+            [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/NEOAutofilterBot?start=BATCH-BQADBQADGQgAAnIsIFajOLBzGg3GJRYE')]
         )
     
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
