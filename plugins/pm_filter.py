@@ -104,6 +104,11 @@ async def next_page(bot, query):
         off_set = None
     else:
         off_set = offset - 6
+    # How to Download button
+
+    btn.append(
+    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/NEOAutofilterBot?start=BATCH-BQADBQADGQgAAnIsIFajOLBzGg3GJRYE')]
+)
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"),
