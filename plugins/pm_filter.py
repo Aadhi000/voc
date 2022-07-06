@@ -621,6 +621,10 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
 
+    btn.append(
+    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/NEOAutofilterBot?start=BATCH-BQADBQADGQgAAnIsIFajOLBzGg3GJRYE')]
+)
+
 
     btn.insert(0, 
         [
