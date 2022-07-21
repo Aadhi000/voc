@@ -10,7 +10,7 @@
 
 <p align="center">
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/Aadhi000/Neo">
+<a href="https://heroku.com/deploy?template=https://github.com/Aadhi000/DuduBot">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
