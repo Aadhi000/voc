@@ -91,8 +91,8 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/DMoviesLand'),
-            InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/AximMovies'),
+            InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='youtube.com/opusTechz'),
             InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MWUpdatez')
         ]
     )
@@ -469,7 +469,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('sᴜᴘᴘᴏʀᴛ ᴘʟᴇᴀsᴇ')
     elif query.data == "help":
         buttons = [[            
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/DMoviesLand'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/AximMovies'),
             InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MWUpdatez')
         ], [
             InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
@@ -622,7 +622,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
 
     btn.append(
-    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/NEOAutofilterBot?start=BATCH-BQADBQADGQgAAnIsIFajOLBzGg3GJRYE')]
+    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/RogFilterBot?start=ZmlsZV9CQUFEQlFBREpRZ0FBdTZXSUZhWXN5RlNibi1pRkJZRQ')]
 )
 
     
@@ -630,8 +630,8 @@ async def auto_filter(client, msg, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/DMoviesLand'),
-            InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://youtube.com/channel/UCf_dVNrilcT0V2R--HbYpMA'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/AximMovies'),
+            InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='youtube.com/opusTechz'),
             InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MWUpdatez')
         ]
     )
