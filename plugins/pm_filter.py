@@ -107,7 +107,7 @@ async def next_page(bot, query):
     # How to Download button
 
     btn.append(
-    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/NEOAutofilterBot?start=BATCH-BQADBQADGQgAAnIsIFajOLBzGg3GJRYE')]
+    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/RogFilterBot?start=ZmlsZV9CQUFEQlFBREpRZ0FBdTZXSUZhWXN5RlNibi1pRkJZRQ')]
 )
     if n_offset == 0:
         btn.append(
@@ -621,9 +621,7 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
 
-    btn.append(
-    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/NEOAutofilterBot?start=BATCH-BQADBQADGQgAAnIsIFajOLBzGg3GJRYE')]
-)
+    
 
 
     btn.insert(0, 
@@ -646,7 +644,7 @@ async def auto_filter(client, msg, spoll=False):
         )
     else:
         btn.append(
-            [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/NEOAutofilterBot?start=BATCH-BQADBQADGQgAAnIsIFajOLBzGg3GJRYE')]
+            [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/RogFilterBot?start=ZmlsZV9CQUFEQlFBREpRZ0FBdTZXSUZhWXN5RlNibi1pRkJZRQ')]
         )
     
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
