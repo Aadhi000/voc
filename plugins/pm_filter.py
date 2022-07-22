@@ -621,6 +621,10 @@ async def auto_filter(client, msg, spoll=False):
             for file in files
         ]
 
+    btn.append(
+    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/NEOAutofilterBot?start=BATCH-BQADBQADGQgAAnIsIFajOLBzGg3GJRYE')]
+)
+
     
 
 
@@ -642,10 +646,7 @@ async def auto_filter(client, msg, spoll=False):
              InlineKeyboardButton(text=f"1/{round(int(total_results) / 10)}", callback_data="pages"),
              InlineKeyboardButton(text="ɴᴇxᴛ ›", callback_data=f"next_{req}_{key}_{offset}")]
         )
-    else:
-        btn.append(
-            [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/RogFilterBot?start=ZmlsZV9CQUFEQlFBREpRZ0FBdTZXSUZhWXN5RlNibi1pRkJZRQ')]
-        )
+    
     
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
