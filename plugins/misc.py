@@ -149,7 +149,7 @@ async def who_is(client, message):
 @Client.on_message(filters.command("help"))
 async def help(client, message):
         buttons = [[            
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/DMoviesLand'),
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/AximMovies'),
             InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MWUpdatez')
         ], [
             InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats'),
