@@ -384,8 +384,8 @@ async def get_shortlink(link):
     if "http" == https:
         https = "https"
         link = link.replace("http", https)
-    url = f'https://du-link.in/api'
-    params = {'api': '453bae6d750e7ecdb5c3c0aa72d57bef671d0ecc',
+    url = f'https://api.shareus.in/shortLink?token=RynKaLU9OlVu82ThC0veYrUwDuL2'
+    params = {'api': 'RynKaLU9OlVu82ThC0veYrUwDuL2',
               'url': link,
               }
 
