@@ -107,7 +107,7 @@ async def next_page(bot, query):
     # How to Download button
 
     btn.append(
-    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/Devil0Bot_Bot?start=ZmlsZV9CQUFEQlFBREpRZ0FBdTZXSUZiRzk3MUZsc2lFZmhZRQ')]
+    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/Devil0Bot_Bot?start=ZmlsZV9CQUFEQlFBRFd3Z0FBanpyZVZiQ3VOeWlvc3pFYkJZRQ')]
 )
     if n_offset == 0:
         btn.append(
@@ -622,7 +622,7 @@ async def auto_filter(client, msg, spoll=False):
         ]
 
     btn.append(
-    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/Devil0Bot_Bot?start=ZmlsZV9CQUFEQlFBREpRZ0FBdTZXSUZiRzk3MUZsc2lFZmhZRQ')]
+    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/Devil0Bot_Bot?start=ZmlsZV9CQUFEQlFBRFd3Z0FBanpyZVZiQ3VOeWlvc3pFYkJZRQ')]
 )
 
     
