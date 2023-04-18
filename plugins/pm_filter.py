@@ -374,14 +374,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                dulink = await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
-                print(dulink)
-                await query.answer(url=dulink)
+                await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             elif settings['botpm']:
-                dulink = await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start={ident}_{file_id}")
-                print(dulink)
-                await query.answer(url=dulink)
+                await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
                 return
             else:
                 ms = await client.send_cached_media(
