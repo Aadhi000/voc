@@ -45,7 +45,7 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("🤧 Hey Search Your Own", show_alert=True)
+        return await query.answer("sᴇᴀʀᴄʜ ʏᴏᴜʀsᴇʟғ ^_^", show_alert=True)
     try:
         offset = int(offset)
     except:
@@ -62,40 +62,57 @@ async def next_page(bot, query):
         n_offset = 0
 
     if not files:
+        reif not files:
+
         return
+
     settings = await get_settings(query.message.chat.id)
+
     if settings['button']:
+
         btn = [
+
             [
+
                 InlineKeyboardButton(
-                    text=f"⊹ {get_size(file.file_size)} › {file.file_name}", 
-                    url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=files_{file.file_id}")
+
+                    text=f"⊹ {get_size(file.file_size)} › {file.file_name}", callback_data=f'files#{file.file_id}'
+
                 ),
+
             ]
+
             for file in files
-        ]
-    else:
-        btn = [
-            [
-                InlineKeyboardButton(
-                    text=f"{file.file_name}", 
-                    url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=files_{file.file_id}")
-                ),
-                InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
-                    callback_data=f'files_#{file.file_id}',
-                ),
-            ]
-            for file in files
+
         ]
 
-    btn.insert(0, 
-        [
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/AximMovies'),
-            InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='youtube.com/opusTechz'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MWUpdatez')
+    else:
+
+        btn = [
+
+            [
+
+                InlineKeyboardButton(
+
+                    text=f"{file.file_name}", callback_data=f'files#{file.file_id}'
+
+                ),
+
+                InlineKeyboardButton(
+
+                    text=f"{get_size(file.file_size)}",
+
+                    callback_data=f'files_#{file.file_id}',
+
+                ),
+
+            ]
+
+            for file in files
+
         ]
-    )
+
+    
    
 
     if 0 < offset <= 6:
@@ -144,7 +161,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("Search Yourself", show_alert=True)
+        return await query.answer("sᴇᴀʀᴄʜ ʏᴏᴜʀsᴇʟғ ^_^", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
@@ -218,7 +235,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("Buddy Don't Touch Others Property 😁", show_alert=True)
+                await query.answer("📛 ʙʀᴏ ɪᴛs ᴏᴛʜᴇʀs ʀᴇǫᴜᴇsᴛ sᴇᴀʀᴄʜ ʏᴏᴜʀsᴇʟғ 📛", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -230,10 +247,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         user_id = query.from_user.id
 
         if act == "":
-            stat = "𝙲𝙾𝙽𝙽𝙴𝙲𝚃"
+            stat = "ᴄᴏɴɴᴇᴄᴛ"
             cb = "connectcb"
         else:
-            stat = "𝙳𝙸𝚂𝙲𝙾𝙽𝙽𝙴𝙲𝚃"
+            stat = "ᴅɪsᴄᴏɴɴᴇᴄᴛ"
             cb = "disconnect"
 
         keyboard = InlineKeyboardMarkup([
@@ -395,12 +412,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ms = await client.send_cached_media(
                     chat_id=CH_FILTER,
                     file_id=file_id,
-                    caption=f'<b><i>📟 Name : <a href=https://t.me/MWUpdatez>{title}</a></i></b>\n\n<b><i>🎗 Size : {size}</b></i>\n\n<i>⚠️ This Message Will Be Auto-Deleted In Next 5 Minutes T𝘰 Avoid Copyright Issues.So Forward This File To Anywhere Else Before Downloading.. ⚠️</i>\n\n<b><i>🧑🏻‍💻 Requested By : {query.from_user.mention}\n🚀 Group : {query.message.chat.title}</i></b>',
+                    caption=f'<b><i>📟 Name : <a href=https://t.me/AboutAadhi>{title}</a></i></b>\n\n<b><i>🎗 Size : {size}</b></i>\n\n<i>⚠️ This Message Will Be Auto-Deleted In Next 5 Minutes T𝘰 Avoid Copyright Issues.So Forward This File To Anywhere Else Before Downloading.. ⚠️</i>\n\n<b><i>🧑🏻‍💻 Requested By : {query.from_user.mention}\n🚀 Group : {query.message.chat.title}</i></b>',
                     protect_content=True if ident == "filep" else False 
                 )
                 msg1 = await query.message.reply(
                 f'<b><i>{query.from_user.mention} Your File Is Ready ✨</i></b>\n\n'
-                f'<b><i>📟 Name : <a href=https://t.me/MWUpdatez>{title}</a></i></b>\n\n'
+                f'<b><i>📟 Name : <a href=https://t.me/AboutAadhi>{title}</a></i></b>\n\n'
                 f'<b><i>🎗 Size : {size}</b></i>\n\n'
                 '<i>⚡️Click The Below Button For Files.⚡️</i>',
                 True,
@@ -426,7 +443,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer(f"Hey, {query.from_user.first_name}! I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+            await query.answer(f"{query.from_user.first_name}ᴅᴏɴᴛ ᴛʀʏ ᴛᴏ ʙᴇ ᴏᴠᴇʀsᴍᴀʀᴛ",show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -598,43 +615,55 @@ async def auto_filter(client, msg, spoll=False):
     pre = 'filep' if settings['file_secure'] else 'file'
     if settings["button"]:
         btn = [
+
             [
+
                 InlineKeyboardButton(
-                    text=f"⊹ {get_size(file.file_size)} › {file.file_name}", 
-                    url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}")
+
+                    text=f"⊹ {get_size(file.file_size)} › {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+
                 ),
+
             ]
+
             for file in files
-        ]
-    else:
-        btn = [
-            [
-                InlineKeyboardButton(
-                    text=f"{file.file_name}",
-                    url=await get_shortlink(f"https://telegram.dog/{temp.U_NAME}?start=pre_{file.file_id}")
-                ),
-                InlineKeyboardButton(
-                    text=f"{get_size(file.file_size)}",
-                    callback_data=f'{pre}_#{file.file_id}',
-                ),
-            ]
-            for file in files
+
         ]
 
-    btn.append(
-    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/Devil0Bot_Bot?start=ZmlsZV9CQUFEQlFBRFd3Z0FBanpyZVZiQ3VOeWlvc3pFYkJZRQ')]
-)
+    else:
+
+        btn = [
+
+            [
+
+                InlineKeyboardButton(
+
+                    text=f"{file.file_name}",
+
+                    callback_data=f'{pre}#{file.file_id}',
+
+                ),
+
+                InlineKeyboardButton(
+
+                    text=f"{get_size(file.file_size)}",
+
+                    callback_data=f'{pre}_#{file.file_id}',
+
+                ),
+
+            ]
+
+            for file in files
+
+        ]
+
+    
 
     
 
 
-    btn.insert(0, 
-        [
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/AximMovies'),
-            InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='youtube.com/opusTechz'),
-            InlineKeyboardButton('ᴄʜᴀɴɴᴇʟ', url='https://t.me/MWUpdatez')
-        ]
-    )
+    
     
 
     if offset != "":
