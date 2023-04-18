@@ -98,9 +98,7 @@ async def next_page(bot, query):
         off_set = offset - 6
     # How to Download button
 
-    btn.append(
-    [InlineKeyboardButton(text="🍃 ʜᴏᴡ ᴛᴏ ᴏᴘᴇɴ ʟɪɴᴋ 🍃", url='https://t.me/Devil0Bot_Bot?start=ZmlsZV9CQUFEQlFBRFd3Z0FBanpyZVZiQ3VOeWlvc3pFYkJZRQ')]
-)
+    
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"),
