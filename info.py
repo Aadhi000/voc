@@ -34,7 +34,7 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://NEW:NEW@cluster0.eqqnies.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME, "cluster5777")
+DATABASE_NAME = environ.get('DATABASE_NAME', "cluster5777")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Aaxx_fikes')
 
 # Others
@@ -56,7 +56,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 DELETE_TIME = int(environ.get('DELETE_TIME', 1800))
-CH_LINK = environ.get('CH_LINK' "")
+CH_LINK = environ.get('CH_LINK' 0)
 CH_FILTER = int(environ.get('CH_FILTER', 0))
 
 
