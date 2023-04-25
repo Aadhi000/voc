@@ -1,12 +1,12 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Aadhi000/Neo.git /Neo
+  git clone https://github.com/Albinmanoj1/Bbb.git /Bbb
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /Neo
+  git clone $UPSTREAM_REPO /Bbb
 fi
-cd /Neo
+cd /Bbb
 pip3 install -U -r requirements.txt
 echo "Starting Ajax | Neo.........."
 python3 bot.py
