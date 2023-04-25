@@ -56,7 +56,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
 DELETE_TIME = int(environ.get('DELETE_TIME', 1800))
-CH_LINK = environ.get('CH_LINK' 0)
+CH_LINK = environ.get('CH_LINK', 0)
 CH_FILTER = int(environ.get('CH_FILTER', 0))
 
 
