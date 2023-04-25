@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['8827228'])
-API_HASH = environ['db66c22b8e630b12cd0b3823c610b3c2']
-BOT_TOKEN = environ['5978384558:AAE1GtlMAiEOuON_edSCj-fCgVEB5FeMJXA']
+API_ID = '14474026'
+API_HASH = '02a0d1fa94b261bf1b7800569b21204d'
+BOT_TOKEN = '5978384558:AAE1GtlMAiEOuON_edSCj-fCgVEB5FeMJXA'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -33,30 +33,30 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('mongodb+srv://NEW:NEW@cluster0.eqqnies.mongodb.net/?retryWrites=true&w=majority', "")
-DATABASE_NAME = environ.get('cluster5777', "rr")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://NEW:NEW@cluster0.eqqnies.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_NAME = environ.get('DATABASE_NAME, "cluster5777")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Aaxx_fikes')
 
 # Others
-LOG_CHANNEL = int(environ.get('-1001536186448', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001536186448'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'AboutAadhi')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), False)
-CUSTOM_FILE_CAPTION = environ.get("<b><i>{file_name} » {file_size}</i></b>", None)
-BATCH_FILE_CAPTION = environ.get("<b><i>{file_name} » {file_size}</i></b>", CUSTOM_FILE_CAPTION)
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b><i>{file_name} » {file_size}</i></b>")
+BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "<b><i>{file_name} » {file_size}</i></b>")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
-MAX_LIST_ELM = environ.get("5", None)
+MAX_LIST_ELM = environ.get("MAX_LIST_ELM", "5")
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
-DELETE_TIME = int(environ.get('1000', 180))
-CH_LINK = environ.get('tu' "")
+DELETE_TIME = int(environ.get('DELETE_TIME', 1800))
+CH_LINK = environ.get('CH_LINK' "")
 CH_FILTER = int(environ.get('CH_FILTER', 0))
 
 
