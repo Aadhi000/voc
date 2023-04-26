@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = '14474026'
 API_HASH = '02a0d1fa94b261bf1b7800569b21204d'
-BOT_TOKEN = '5498443284:AAHlORIArV_VZM-u2Ycn7nG2lJ2l-iWQcm8'
+BOT_TOKEN = '6167432156:AAEvawgslqcdoBo6LApA8CFBOH5vOYuz3Bs'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -33,7 +33,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://NEW:NEW@cluster0.eqqnies.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Rog:Rog@cluster0.kf0ta.mongodb.net/?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster5777")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Aaxx_fikes')
 
