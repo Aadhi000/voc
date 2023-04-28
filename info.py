@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = '14474026'
 API_HASH = '02a0d1fa94b261bf1b7800569b21204d'
-BOT_TOKEN = '6167432156:AAEvawgslqcdoBo6LApA8CFBOH5vOYuz3Bs'
+BOT_TOKEN = environ['BOT_TOKEN']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -23,7 +23,7 @@ PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg h
 PICS_RT = (environ.get('PICS_RT', 'https://telegra.ph/file/e3a501feae65ed0b51699.jpg https://telegra.ph/file/14b65049c09b03da89beb.jpg https://telegra.ph/file/39cc7f6811b9eb7c08434.jpg https://telegra.ph/file/6757fe271072f8ce98a48.jpg https://telegra.ph/file/8d4a3a7df714648008a2e.jpg https://telegra.ph/file/2238ca113432d4dc76d5c.jpg https://telegra.ph/file/6824fd8724bc39c2d3201.jpg https://telegra.ph/file/b4d26aeec88a640e75390.jpg https://telegra.ph/file/5bf5a2e88b3d62710c49a.jpg https://telegra.ph/file/161f17f675ce33fe2aaf2.jpg https://telegra.ph/file/fc0992bdc2dd7853131cb.jpg https://telegra.ph/file/b28f44bbc4a7751d87ec6.jpg https://telegra.ph/file/0d88db8a287787989c3f4.jpg https://telegra.ph/file/cf0abe170787287002199.jpg https://telegra.ph/file/a6bef173cc5f77c28ba3f.jpg https://telegra.ph/file/e33089b087d2b0630b88e.jpg https://telegra.ph/file/d0b39c307ebfed4cad027.jpg https://telegra.ph/file/67fcb4ce59f62a089e3f1.jpg https://telegra.ph/file/e63757069cd67b59f20fd.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1979355984 5330554220 5599684606').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMIN','').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
